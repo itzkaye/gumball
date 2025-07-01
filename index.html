@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BALL OF FORTUNE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="container">
+    <h1>BALL OF FORTUNE</h1>
+    <p class="subtitle">Good Luck Players!</p>
+    
+    <div class="machine-container">
+      <div class="gumball-machine">
+        <div class="machine-top">
+          <div class="gumballs">
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+            <div class="mini-gumball"></div>
+          </div>
+        </div>
+        <div class="machine-base">
+          <div class="dispenser"></div>
+        </div>
+      </div>
+      
+      <div class="coin-slot">
+  <div class="coin-slot-shine"></div>
+</div>
+
+      <div id="gumball"></div>
+      
+      <div>
+        <button class="draw-button" onclick="drawGumball()">Click to Draw</button>
+        
+      </div>
+    </div>
+
+    <div id="result">
+      <h3 class="challenge-title">CongraTULAtions!</h3>
+      
+      <div class="challenge-item tema">
+        <strong>🟢 Tema:</strong>
+        <span id="tema"></span>
+      </div>
+      
+      <div class="challenge-item talinghaga">
+        <strong>🔵 Talinghaga / Sawikain:</strong>
+        <ul id="talinghaga"></ul>
+      </div>
+      
+      <div class="challenge-item saknong">
+        <strong>🟡Bilang ng Saknong/Taludtod:</strong>
+        <span id="saknong"></span>
+      </div>
+      
+      <div class="challenge-item tugma">
+        <strong>🔴 Uri ng Tugmaan:</strong>
+        <span id="tugma"></span>
+      </div>
+    </div>
+  </div>
+
+<audio autoplay loop>
+  <source src="assets/Think Fast  Game Show Music Theme for creators.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
