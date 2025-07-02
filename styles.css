@@ -276,8 +276,8 @@ h1 {
 }
 
 .dispenser {
-  width: 80px;
-  height: 40px;
+  width: 90px;
+  height: 60px;
   background: linear-gradient(145deg, #2c3e50, #1a252f);
   border-radius: 0 0 25px 25px;
   position: absolute;
