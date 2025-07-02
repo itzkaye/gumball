@@ -56,14 +56,13 @@
       </div>
       
       <div class="coin-slot">
-  <div class="coin-slot-shine"></div>
-</div>
+        <div class="coin-slot-shine"></div>
+      </div>
 
       <div id="gumball"></div>
       
       <div>
         <button class="draw-button" onclick="drawGumball()">Click to Draw</button>
-        
       </div>
     </div>
 
@@ -92,10 +91,25 @@
     </div>
   </div>
 
-<audio autoplay loop>
-  <source src="assets/bgmusic.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
+  <script>
+    // Background music code
+    let audio;
+    let musicStarted = false;
+
+    // Start music on first user interaction
+    document.addEventListener('click', function() {
+      if (!musicStarted) {
+        audio = new Audio('assets/bgmusic.mp3');
+        audio.loop = true;
+        audio.volume = 0.3; // 30% volume
+        audio.play().catch(e => console.log("Audio play failed:", e));
+        musicStarted = true;
+        
+        // Optional: Remove the event listener after first click
+        document.removeEventListener('click', arguments.callee);
+      }
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
